@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Tugas 4 Web Programming</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Dunia Elektro</b><br><small>Modified by <b>Suciati</b></small></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Komponen Elektronika</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teori Elektronika</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Pengujian Komponen</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Ilmu Statistika</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>Dunia Elektro</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+    <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Pengertian Mikrokontroler <i>(Microcontroller)</i> dan Strukturnya.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+    <p>Pengertian Mikrokontroler (MicroController) dan Strukturnya – Mikrokontroler adalah sebuah komputer kecil yang dikemas dalam bentuk chip IC (Integrated Circuit) dan dirancang untuk melakukan tugas atau operasi tertentu. Pada dasarnya, sebuah IC Mikrokontroler terdiri dari satu atau lebih Inti Prosesor (CPU), Memori (RAM dan ROM) serta perangkat INPUT dan OUTPUT yang dapat diprogram.</p>
+
+    <p>Dalam pengaplikasiannya, Pengendali Mikro yang dalam bahasa Inggris disebut dengan Microcontroller ini digunakan dalam produk ataupun perangkat yang dikendalikan secara otomatis seperti sistem kontrol mesin mobil, perangkat medis, pengendali jarak jauh, mesin, peralatan listrik, mainan dan perangkat-perangkat yang menggunakan sistem tertanam lainnya.</p>
+        
+    <p>Penggunaan Mikrokontroler ini semakin populer karena kemampuannya yang dapat mengurangi ukuran dan biaya pada suatu produk atau desain apabila dibandingkan dengan desain yang dibangun dengan menggunakan mikroprosesor dengan memori dan perangkat input dan output secara terpisah.</p>
+    <h2>Diagram Blok dan Struktur Mikrokontroler</h2>
+    <p>Berikut ini adalah Diagram Blok dan Struktur Mikrokontroler beserta penjelasan singkat tentang bagian-bagian utamanya.</p>
+    <img src="gambar1.png" alt="Mikrokontroler" onclick="onClick(this)">
+    <h3>
+        <p>1. CPU</p>
+    </h3>
+    <P>
+        CPU adalah otak mikrokontroler. CPU bertanggung jawab untuk mengambil instruksi (fetch), menerjemahkannya (decode), lalu akhirnya dieksekusi (execute). CPU menghubungkan setiap bagian dari mikrokontroler ke dalam satu sistem. Fungsi utama CPU adalah mengambil dan mendekode instruksi. Instruksi yang diambil dari memori program harus diterjemahkan atau melakukan decode oleh CPU tersebut.
+    </P>
+    <h3>
+        <p>2. Memori (Penyimpanan)</p>
+    </h3>
+    <p>
+        Fungsi memori dalam mikrokontroler sama dengan mikroprosesor. Memori Ini digunakan untuk menyimpan data dan program. Sebuah mikrokontroler biasanya memiliki sejumlah RAM dan ROM (EEPROM, EPROM dan lain-lainnya) atau memori flash untuk menyimpan kode sumber program (source code program).
+    </p>
+    <h3>
+        <p>3. Port INPUT / OUTPUT paralel</p>
+    </h3>
+    <p>
+        Port Input / Output paralel digunakan untuk mendorong atau menghubungkan berbagai perangkat seperti LCD, LED, printer, memori dan perangkat INPUT/OUTPUT lainnya ke mikrokontroler.  
+    </p>
+    <h3>
+        <p>4. Port Serial (Serial Port)</p>
+    </h3>
+    <p>
+        Port serial menyediakan berbagai antarmuka serial antara mikrokontroler dan periferal lain seperti port paralel.
+    </p>
+    <h3>
+        <p>5. Pengatur Waktu dan Penghitung (Timer and Counter)</p>
+    </h3>
+    <p>
+        Timer dan Counter adalah salah satu fungsi yang sangat berguna dari Mikrokontroler. Mikrokontroler mungkin memiliki lebih dari satu timer dan counter. Pengatur waktu (Timer) dan Penghitung (Counter) menyediakan semua fungsi pengaturean waktu dan penghitungan di dalam mikrokontroler. Operasi utama yang dilakukan di bagian ini adalah fungsi jam, modulasi, pembangkitan pulsa, pengukuran frekuensi, osilasi, dan lain sebagainya. Bagian ini juga dapat digunakan untuk menghitung pulsa eksternal.
+    </p>
+    <h3>
+        <p>6. Analog to Digital Converter atau Pengonversi Analog ke Digital (ADC)</p>
+    </h3>
+    <p>
+        Konverter ADC digunakan untuk mengubah sinyal analog ke bentuk digital. Sinyal input dalam konverter ini harus dalam bentuk analog (misalnya Output dari Sensor) sedangkan Outputnya dalam bentuk digital. Output digital dapat digunakan untuk berbagai aplikasi digital seperti layar digital pada Perangkat pengukuran.
+    </p>
+    <h3>
+        <p>7. Digital to Analog Converter atau Pengonversi Digital ke Analog (DAC)</p>
+    </h3>
+    <p>
+        DAC melakukan operasi pembalikan konversi ADC. DAC mengubah sinyal digital menjadi format analog. Ini biasanya digunakan untuk mengendalikan perangkat analog seperti motor DC dan lain sebagainya.
+    </p>
+    <h3>
+        <p>8. Kontrol Interupsi (Interrupt Control)</p>
+    </h3>
+    <p>
+        Kontrol interupsi atau Interrupt Control digunakan untuk menyediakan interupsi (penundaan) untuk program kerja. Interrupt dapat berupa eksternal (diaktifkan dengan menggunakan pin interrupt) atau internal (dengan menggunakan instruksi interupsi selama pemrograman). 
+    </p>
+    <h3>
+        <p>9. Blok Fungsi Khusus (Special Functioning Block)</p>
+    </h3>
+    <p>
+        Beberapa Mikrokontroler yang hanya dapat digunakan untuk beberapa aplikasi khusus (misalnya sistem Robotik), pengontrol ini memiliki beberapa port tambahan untuk melakukan operasi khusus tersebut yang umumnya dinamakan dengan Blok Fungsi Khusus.
+    </p>
+    <h2>
+        <p>Keunggulan dan Kelemahan Mikrokontroler</p>
+    </h2>
+    <p>
+        <b>Keunggulan atau Kelebihan utama dari mikrokontroler :</b>
+    </p>
+    <p>
+        <ul>
+            <li>Mikrokontroler bertindak sebagai mikrokomputer tanpa harus ada komponen digital tambahan lainnya</li>
+            <li>Dapat mengurangi biaya dan ukuran sistem karena integrasi yang lengkap dalam sebuah mikrokontroler.</li>
+            <li>Penggunaan mikrokontroler sederhana dan mudah untuk memecahkan masalah dan pemeliharaan sistem.</li>
+            <li>Sebagian besar pin dapat diprogram oleh pengguna untuk melakukan berbagai fungsi.</li>
+            <li>Mudah menghubungkan port RAM, ROM dan I / O tambahan.</li>
+            <li>Waktu yang diperlukan untuk melakukan operasi rendah.</li>
+        </ul>
+    </p>
+    <p>
+        <b>Kekurangan dari Mikrokontroler:</b>
+    </p>
+    <p>
+        <ul>
+            <li>Mikrokontroler memiliki arsitektur yang lebih kompleks daripada mikroprosesor.</li>
+            <li>Hanya melakukan eksekusi dalam jumlah terbatas dalam waktu yang bersamaan.</li>
+            <li>Kebanyakan hanya digunakan dalam peralatan-peralatan mikro.</li>
+            <li>Tidak dapat terhubung dengan perangkat yang berdaya tinggi secara langsung.</li>
+        </ul>
+    </p>
+    <p>
+        <b>Sumber :</b> teknikelektronika.com
+    </p>
+  </div>
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
